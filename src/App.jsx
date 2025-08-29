@@ -1,5 +1,14 @@
+import Layout from "./components/layout";
+import Home from "./files/home";
+
 function App() {
-  return <>hello World.</>;
+  return (
+    <>
+      <Layout>
+        <Home />
+      </Layout>
+    </>
+  );
 }
 
 export default App;
