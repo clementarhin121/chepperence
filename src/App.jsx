@@ -5,10 +5,7 @@ import Home from "./files/home";
 function App() {
   return (
     <>
-      <Layout>
-        <Home />
-        <FoodMenu />
-      </Layout>
+      <Home />
     </>
   );
 }
