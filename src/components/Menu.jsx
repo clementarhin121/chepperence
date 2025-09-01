@@ -4,10 +4,7 @@ function Menu() {
     <>
       <div className="menuContainer">
         <div className="logo">
-          <a href="/chepperence/">
-            {" "}
-            <h2>Chef</h2>
-          </a>
+          <h2>Chef</h2>
         </div>
         <div className="cart">
           <i className="fa-solid fa-cart-shopping"></i>
