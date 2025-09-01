@@ -4,7 +4,7 @@ function Menu() {
     <>
       <div className="menuContainer">
         <div className="logo">
-          <a href="/">
+          <a href="/chepperence/">
             {" "}
             <h2>Chef</h2>
           </a>
