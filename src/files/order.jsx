@@ -64,17 +64,17 @@ function Order() {
               ))}
             </div>
           </div>
-          <div className="menWriting">
-            <div className="menCont">
-              <button>BRUNCH </button> <button>LUNCH</button>{" "}
-              <button>STARTERS</button> <button>KOKO</button>{" "}
-              <button>KORKOR</button> <button>ALEWA</button>
-              <button>DRINKS</button> <button>NSA FUFUO</button>
-            </div>
-          </div>
         </div>
         <section className="main4">
           <div className="content">
+            <div className="menWriting">
+              <div className="menCont">
+                <button>BRUNCH </button> <button>LUNCH</button>{" "}
+                <button>STARTERS</button> <button>KOKO</button>{" "}
+                <button>KORKOR</button> <button>ALEWA</button>
+                <button>DRINKS</button> <button>NSA FUFUO</button>
+              </div>
+            </div>
             <h1>
               FIE NE FIE <br /> BRUNCH
             </h1>
@@ -126,6 +126,7 @@ function Order() {
             </h3>
           </div>
         </section>
+        <br />
         <hr
           style={{
             width: "90%",

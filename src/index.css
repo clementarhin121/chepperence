@@ -263,19 +263,18 @@ button {
   }
 }
 .orderHome {
-  height: 250vh;
+  height: 280vh;
   color: black;
   background-color: rgba(253, 185, 60, 0.091);
   .main3 {
     height: 100vh;
-    padding: 35% 2%;
+    padding: 29% 0%;
     .carousel {
       position: relative;
       width: 100%;
-      height: 400px;
+      height: 700px;
       margin: auto;
       overflow: hidden;
-      border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       .slides {
         display: flex;
@@ -350,32 +349,34 @@ button {
         background: #ff9800; /* active dot color */
       }
     }
-    .menWriting {
-      height: 38vh;
-      .menCont {
-        width: 100%;
-        height: inherit;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        padding: 20% 15%;
-        button {
-          border: 4px solid rgb(45, 44, 44);
-          border-style: dotted;
-          border-radius: 15px;
-          padding: 0% 5%;
-          height: 5vh;
-          background-color: rgba(255, 68, 0, 0.803);
-          color: rgb(246, 246, 246);
-          font-size: 1.2rem;
-        }
-      }
-    }
   }
   .main4 {
-    height: 120vh;
+    height: 160vh;
     padding-top: 5vh;
     .content {
+      .menWriting {
+        height: 38vh;
+        .menCont {
+          width: 100%;
+          height: inherit;
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 5% 15%;
+          button {
+            border: 4px solid rgb(45, 44, 44);
+            border-style: dotted;
+            border-radius: 15px;
+            padding: 0% 5%;
+            height: 5vh;
+            background-color: rgba(255, 68, 0, 0.803);
+            font-weight: bold;
+            color: black;
+            font-size: 1.2rem;
+          }
+        }
+      }
       text-align: center;
       word-spacing: 10px;
       display: flex;
