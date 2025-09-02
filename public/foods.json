@@ -1,0 +1,98 @@
+{
+  "menu": {
+    "starters": [
+      {
+        "id": 1,
+        "name": "Suya Skewers",
+        "description": "Spicy grilled beef skewers with ground peanut spice mix (Nigeria).",
+        "price": 8.5,
+        "currency": "USD"
+      },
+      {
+        "id": 2,
+        "name": "Sambusa",
+        "description": "Crispy pastry filled with spiced lentils or minced beef (Ethiopia/Somalia).",
+        "price": 6.0,
+        "currency": "USD"
+      }
+    ],
+    "main_courses": [
+      {
+        "id": 3,
+        "name": "Jollof Rice with Chicken",
+        "description": "Smoky tomato-based rice served with grilled chicken (West Africa).",
+        "price": 15.0,
+        "currency": "USD"
+      },
+      {
+        "id": 4,
+        "name": "Egusi Soup with Pounded Yam",
+        "description": "Ground melon seed soup with spinach and assorted meats, served with pounded yam (Nigeria).",
+        "price": 18.0,
+        "currency": "USD"
+      },
+      {
+        "id": 5,
+        "name": "Injera with Doro Wat",
+        "description": "Spongy sour flatbread served with spicy chicken stew (Ethiopia).",
+        "price": 16.5,
+        "currency": "USD"
+      },
+      {
+        "id": 6,
+        "name": "Bunny Chow",
+        "description": "Hollowed-out bread loaf filled with spicy curry (South Africa).",
+        "price": 12.0,
+        "currency": "USD"
+      }
+    ],
+    "sides": [
+      {
+        "id": 7,
+        "name": "Plantain Chips",
+        "description": "Crispy fried plantains sprinkled with sea salt (West Africa).",
+        "price": 4.5,
+        "currency": "USD"
+      },
+      {
+        "id": 8,
+        "name": "Chapati",
+        "description": "Soft flatbread served as a side (East Africa).",
+        "price": 3.0,
+        "currency": "USD"
+      }
+    ],
+    "drinks": [
+      {
+        "id": 9,
+        "name": "Hibiscus Tea (Zobo/Bissap)",
+        "description": "Refreshing sweet hibiscus flower drink (West Africa).",
+        "price": 5.0,
+        "currency": "USD"
+      },
+      {
+        "id": 10,
+        "name": "Palm Wine",
+        "description": "Traditional naturally fermented palm sap drink.",
+        "price": 7.0,
+        "currency": "USD"
+      }
+    ],
+    "desserts": [
+      {
+        "id": 11,
+        "name": "Mandazi",
+        "description": "Fried East African doughnut with a hint of coconut.",
+        "price": 4.0,
+        "currency": "USD"
+      },
+      {
+        "id": 12,
+        "name": "Malva Pudding",
+        "description": "South African sponge pudding served with warm custard.",
+        "price": 6.5,
+        "currency": "USD"
+      }
+    ]
+  }
+}

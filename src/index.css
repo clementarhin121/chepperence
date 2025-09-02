@@ -27,6 +27,7 @@ button {
   background-color: rgba(0, 0, 0, 0.349);
 }
 .menuContainer {
+  color: white;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -258,6 +259,140 @@ button {
       color: black;
       text-align: center;
       padding: 20% 1%;
+    }
+  }
+}
+.orderHome {
+  height: 250vh;
+  color: black;
+  background-color: rgba(253, 185, 60, 0.091);
+  .main3 {
+    height: 100vh;
+    padding: 35% 2%;
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      .slides {
+        display: flex;
+        height: inherit;
+        width: 100%; /* 4 slides */
+        transition: transform 1s ease-in-out;
+      }
+
+      .slide {
+        width: 100%;
+        flex-shrink: 0;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative; /* needed for overlay */
+      }
+
+      /* Dark overlay */
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      /* Show slides based on checked radio */
+      #slide1:checked ~ .slides {
+        transform: translateX(0%);
+      }
+      #slide2:checked ~ .slides {
+        transform: translateX(-100%);
+      }
+      #slide3:checked ~ .slides {
+        transform: translateX(-200%);
+      }
+      #slide4:checked ~ .slides {
+        transform: translateX(-300%);
+      }
+
+      /* Navigation dots */
+      .nav {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+      }
+
+      .nav label {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .nav label:hover {
+        background: #ff9800;
+      }
+      /* Active dot based on checked input */
+      #slide1:checked ~ .slides ~ .nav label[for="slide1"],
+      #slide2:checked ~ .slides ~ .nav label[for="slide2"],
+      #slide3:checked ~ .slides ~ .nav label[for="slide3"],
+      #slide4:checked ~ .slides ~ .nav label[for="slide4"] {
+        background: #ff9800; /* active dot color */
+      }
+    }
+    .menWriting {
+      height: 38vh;
+      .menCont {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20% 15%;
+        button {
+          border: 4px solid rgb(45, 44, 44);
+          border-style: dotted;
+          border-radius: 15px;
+          padding: 0% 5%;
+          height: 5vh;
+          background-color: rgba(255, 68, 0, 0.803);
+          color: rgb(246, 246, 246);
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .main4 {
+    height: 120vh;
+    padding-top: 5vh;
+    .content {
+      text-align: center;
+      word-spacing: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        word-spacing: 0px;
+        p {
+          font-weight: lighter;
+        }
+      }
     }
   }
 }
