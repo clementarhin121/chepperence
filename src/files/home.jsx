@@ -4,11 +4,6 @@ import Signup from "../users/signup";
 import FoodMenu from "./FoodMenu";
 
 function Home() {
-  const navigate = useNavigate();
-  const orders = () => {
-    navigate("/order");
-  };
-
   return (
     <>
       <Layout>
@@ -16,7 +11,10 @@ function Home() {
           <div className="main">
             <div className="placeorder">
               <h3>Open For Lunch, Dinner</h3>
-              <button onClick={orders}>PLACE &nbsp; ORDERS</button>
+              <a href="order.html">
+                {" "}
+                <button>PLACE &nbsp; ORDERS</button>
+              </a>
             </div>
           </div>
           <FoodMenu />
