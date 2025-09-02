@@ -54,7 +54,6 @@ function Order() {
                   }}></div>
               ))}
             </div>
-            Hello
             {/* Navigation dots */}
             <div className="nav">
               {slides.map((_, i) => (
@@ -133,6 +132,7 @@ function Order() {
             margin: "0 auto",
             borderColor: "red",
             borderWidth: "2px",
+            marginTop: "10vh",
           }}
         />
       </div>
