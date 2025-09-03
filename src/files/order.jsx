@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Layout from "../components/layout";
-import { useNavigate } from "react-router-dom";
 
 function Order() {
   useEffect(() => {

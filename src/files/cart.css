@@ -133,10 +133,19 @@
 }
 .cartMain {
   min-height: 100vh;
-  padding-top: 10vh;
+  padding-top: 9vh;
   background-color: rgba(245, 222, 179, 0.356);
   .main2 {
-    border: 1px solid;
-    height: 90vh;
+    min-height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    .cartItem {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      margin-top: 2vh;
+    }
   }
 }

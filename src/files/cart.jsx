@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import "./Cart.css";
 import Menu from "/Applications/React/newReact/chepperence/src/components/Menu.jsx";
-
 const IMAGES = [
   "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg",
   "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
@@ -21,6 +20,17 @@ function Cart() {
     }, 10000);
     return () => clearInterval(id);
   }, [total]);
+
+  const [cart, setCart] = useState(null);
+  useEffect(() => {
+    fetch(`foods.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch JSON");
+        return res.json();
+      })
+      .then((data) => setCart(data.menu))
+      .catch((err) => console.error("Error loading JSON:", err));
+  }, []);
 
   return (
     <>
@@ -64,7 +74,29 @@ function Cart() {
         </div>
       </section>
       <section className="cartMain">
-        <div className="main2"></div>
+        <div className="main2">
+          {cart ? (
+            Object.entries(cart).map(([category, items]) => (
+              <div key={category}>
+                <h2>{category.replace("_", " ").toUpperCase()}</h2>
+                {items.map((item) => (
+                  <div
+                    key={item.id}
+                    className="cartItem">
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                    <p>
+                      {item.currency ? item.currency + " " : ""}
+                      {item.price}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ))
+          ) : (
+            <p>Loading menu...</p>
+          )}
+        </div>
       </section>
     </>
   );

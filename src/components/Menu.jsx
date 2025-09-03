@@ -11,7 +11,9 @@ function Menu() {
           </a>
         </div>
         <div className="cart">
-          <i className="fa-solid fa-cart-shopping"></i>
+          <a href="cart.html">
+            <i className="fa-solid fa-cart-shopping"></i>
+          </a>
         </div>
         <div className="burger">
           <a href="#foodHome">
