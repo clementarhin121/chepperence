@@ -12,7 +12,7 @@
 /* Radio controls container */
 .radio-controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 30%;
   display: flex;
   gap: 10px;
   z-index: 3; /* above everything */
@@ -63,7 +63,7 @@
   background-image: url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg");
 }
 .s3 {
-  background-image: url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg");
+  background-image: url("https://www.thespruceeats.com/thmb/cZ-10jLw7d65pH45ioawTxk5FDQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/koose-spicy-bean-cakes-recipe-ghana-39443-hero-01-25f6410a4ad446ae8cc2e7c37d59e049.jpg");
 }
 .s4 {
   background-image: url("https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg");

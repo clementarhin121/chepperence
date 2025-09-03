@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import "./Cart.css";
 import Menu from "/Applications/React/newReact/chepperence/src/components/Menu.jsx";
 const IMAGES = [
-  "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg",
-  "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
-  "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
-  "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg",
+  "https://travelandmunchies.com/wp-content/uploads/2022/12/IMG_6662-scaled.jpg",
+  "https://i0.wp.com/barefootinjandals.com/wp-content/uploads/2023/06/IMG_1999-scaled.jpeg?fit=735%2C724&ssl=1",
+  "https://i0.wp.com/barefootinjandals.com/wp-content/uploads/2022/09/IMG_0286-scaled.jpeg?fit=735%2C512&ssl=1",
+  "https://theafrikanstore.com/cdn/shop/articles/abelewalls_PCstockfood_80f6ca32-f63f-4476-912f-3474713d5496_460x@2x.jpg?v=1688625371",
 ];
 
 function Cart() {
