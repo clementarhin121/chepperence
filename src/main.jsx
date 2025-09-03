@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Order from "./files/order.jsx";
+import Cart from "./files/cart.jsx";
 
 const router = createBrowserRouter(
   [
@@ -15,6 +16,11 @@ const router = createBrowserRouter(
     {
       path: "/order",
       element: <Order />,
+      errorElement: <div>404 not found</div>,
+    },
+    {
+      path: "/cart",
+      element: <Cart />,
       errorElement: <div>404 not found</div>,
     },
   ],
